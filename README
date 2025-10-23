@@ -1,0 +1,60 @@
+# 🎯 QCM JavaScript Interactif
+
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+
+## 📝 Description
+Un questionnaire à choix multiples (QCM) interactif développé en JavaScript pur avec HTML5 et CSS3. Ce projet a été réalisé dans le cadre de mes études à l'EMSI Rabat.
+
+## ✨ Fonctionnalités
+- ✅ 5 questions sur différents thèmes (géographie, HTML, JavaScript)
+- 🔄 Bouton d'initialisation pour recommencer
+- 📊 Affichage du résultat avec score
+- ✅ Correction complète avec réponses
+- 🎨 Design moderne et responsive
+- 💫 Interface intuitive et agréable
+
+## 🚀 Démonstration
+[Voir le projet en ligne](https://chaymae-rifki.github.io/QCM-JavaScript/)
+
+## 📂 Structure du projet
+```
+QCM-JavaScript/
+├── index.html      # Page principale du QCM
+├── style.css       # Feuille de styles
+├── README.md       # Documentation
+```
+
+## 🛠️ Technologies utilisées
+- **HTML5** : Structure sémantique
+- **CSS3** : Design moderne avec gradients et animations
+- **JavaScript** : Logique du quiz et interactions
+
+## 💻 Installation et utilisation
+
+### Option 1 : Utilisation en ligne
+Cliquez simplement sur le lien de démonstration ci-dessus
+
+### Option 2 : Installation locale
+```bash
+# Cloner le repository
+git clone https://github.com/Chaymae-rifki/QCM-JavaScript.git
+
+# Ouvrir le fichier
+cd QCM-JavaScript
+open index.html
+```
+
+## 📖 Comment utiliser
+1. Répondez aux 5 questions proposées
+2. Cliquez sur "Afficher le résultat" pour voir votre score
+3. Cliquez sur "Afficher les réponses" pour voir la correction
+4. Utilisez "Initialiser" pour recommencer
+
+## 👩‍💻 Auteur
+**Chaymae RIFKI**
+- GitHub: [@Chaymae-rifki](https://github.com/Chaymae-rifki)
+- Email: chaymaerifki19@gmail.com
+- École: ENSA FES - ILIA 1
+
