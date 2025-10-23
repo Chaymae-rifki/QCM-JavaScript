@@ -1,83 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QCM</title>
+    <title>QCM JavaScript Interactif</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>QCM (javascript)</h1>
-    <hr>
-    <button onclick="initialiserQCM()">Initialiser le QCM</button>
+    <div class="container">
+        <h1>🎯 QCM JavaScript Interactif</h1>
+        <p style="text-align: center;">Répondez aux questions suivantes, puis utilisez les boutons ci-dessous</p>
+        
+        <hr>
+        
+        <button onclick="initialiserQCM()">🔄 Initialiser le QCM</button>
 
-    <p>Répondez aux questions suivantes, puis utilisez les boutons ci-dessous:</p>
-    <hr>
-    <form id="QCM">
-        <div>
-            <h3>Question 1 : Quelle est la capitale de france ?</h3>
-            <label><input type="radio" name="q1" value="a">Menpelier</label> <br>
-            <label><input type="radio" name="q1" value="b">Paris</label> <br>
-            <label><input type="radio" name="q1" value="c">Lile</label> <br>
-            <label><input type="radio" name="q1" value="d">Lion</label> <br>
-        </div>
-        <br>
+        <form id="QCM">
+            <div class="question">
+                <h3>Question 1 : Quelle est la capitale de France ?</h3>
+                <label><input type="radio" name="q1" value="a">Montpellier</label>
+                <label><input type="radio" name="q1" value="b">Paris</label>
+                <label><input type="radio" name="q1" value="c">Lille</label>
+                <label><input type="radio" name="q1" value="d">Lyon</label>
+            </div>
 
-        <div>
-            <h3>Question 2 : Quelle balise HTML crée un formulaire ?</h3>
-            <label><input type="checkbox" name="q2" value="a"> formulaire</label><br>
-            <label><input type="checkbox" name="q2" value="b"> form</label><br>
-            <label><input type="checkbox" name="q2" value="c"> input</label><br>
-            <label><input type="checkbox" name="q2" value="d"> questionnaire</label><br>
-        </div>
-        <br>    
+            <div class="question">
+                <h3>Question 2 : Quelle balise HTML crée un formulaire ?</h3>
+                <label><input type="checkbox" name="q2" value="a">formulaire</label>
+                <label><input type="checkbox" name="q2" value="b">form</label>
+                <label><input type="checkbox" name="q2" value="c">input</label>
+                <label><input type="checkbox" name="q2" value="d">questionnaire</label>
+            </div>
 
-        <div>
-            <h3>Question 3 : Que signifie HTML ?</h3>
-            <label><input type="checkbox" name="q3" value="a"> HyperText Markup Language</label><br>
-            <label><input type="checkbox" name="q3" value="b"> High Tech Modern Language</label><br>
-            <label><input type="checkbox" name="q3" value="c"> Home Tool Markup Language</label><br>
-            <label><input type="checkbox" name="q3" value="d"> Hyperlinks and Text Markup Language</label><br>
-        </div>
-        <br>
+            <div class="question">
+                <h3>Question 3 : Que signifie HTML ?</h3>
+                <label><input type="checkbox" name="q3" value="a">HyperText Markup Language</label>
+                <label><input type="checkbox" name="q3" value="b">High Tech Modern Language</label>
+                <label><input type="checkbox" name="q3" value="c">Home Tool Markup Language</label>
+                <label><input type="checkbox" name="q3" value="d">Hyperlinks and Text Markup Language</label>
+            </div>
 
-        <div>
-            <h3>Question 4 : À quoi sert JavaScript ?</h3>
-            <label><input type="checkbox" name="q4" value="a"> Créer des bases de données</label><br>
-            <label><input type="checkbox" name="q4" value="b"> Rendre les pages web interactives</label><br>
-            <label><input type="checkbox" name="q4" value="c"> Créer des graphiques 3D</label><br>
-            <label><input type="checkbox" name="q4" value="d"> Gérer les styles CSS</label><br>
-        </div>
-        <br>
+            <div class="question">
+                <h3>Question 4 : À quoi sert JavaScript ?</h3>
+                <label><input type="checkbox" name="q4" value="a">Créer des bases de données</label>
+                <label><input type="checkbox" name="q4" value="b">Rendre les pages web interactives</label>
+                <label><input type="checkbox" name="q4" value="c">Créer des graphiques 3D</label>
+                <label><input type="checkbox" name="q4" value="d">Gérer les styles CSS</label>
+            </div>
 
-        <div>
-            <h3>Question 5 : Quelle est la capitale de Maroc ?</h3>
-            <label><input type="radio" name="q5" value="a">Rabat</label> <br>
-            <label><input type="radio" name="q5" value="b">Marrakech</label> <br>
-            <label><input type="radio" name="q5" value="c">Fès</label> <br>
-            <label><input type="radio" name="q5" value="d">Casablanca</label> <br>
-        </div>
-        <br>
-    </form>
-    <hr>
-    <button onclick="afficherReponses()">Afficher les réponses</button>
-    <button onclick="afficherResultat()">Afficher le résultat</button>
+            <div class="question">
+                <h3>Question 5 : Quelle est la capitale du Maroc ?</h3>
+                <label><input type="radio" name="q5" value="a">Rabat</label>
+                <label><input type="radio" name="q5" value="b">Marrakech</label>
+                <label><input type="radio" name="q5" value="c">Fès</label>
+                <label><input type="radio" name="q5" value="d">Casablanca</label>
+            </div>
+        </form>
+
+        <hr>
+
+        <button onclick="afficherReponses()">✅ Afficher les réponses</button>
+        <button onclick="afficherResultat()">📊 Afficher le résultat</button>
+    </div>
 
     <script>
-        
         const Correction = {
-            q1: ['b'],  
-            q2: ['b'],  
-            q3: ['a'],  
-            q4: ['b'],  
-            q5: ['a']   
+            q1: ['b'],
+            q2: ['b'],
+            q3: ['a'],
+            q4: ['b'],
+            q5: ['a']
         };
 
-      
         function initialiserQCM() {
             document.getElementById("QCM").reset();
         }
 
-       
         function getReponsesUtilisateur() {
             const reponses = {};
             for (let i = 1; i <= 5; i++) {
@@ -90,22 +88,20 @@
             return reponses;
         }
 
-        
         function afficherReponses() {
             let contenu = "<h2>Corrigé du QCM</h2>";
             contenu += "<ol>";
-            contenu += "<li>Quelle est la capitale de france ?<br>➡ <u style='color:green'>Paris</u></li><br>";
+            contenu += "<li>Quelle est la capitale de France ?<br>➡ <u style='color:green'>Paris</u></li><br>";
             contenu += "<li>Quelle balise HTML crée un formulaire ?<br>➡ <u style='color:green'>form</u></li><br>";
             contenu += "<li>Que signifie HTML ?<br>➡ <u style='color:green'>HyperText Markup Language</u></li><br>";
             contenu += "<li>À quoi sert JavaScript ?<br>➡ <u style='color:green'>Rendre les pages web interactives</u></li><br>";
-            contenu += "<li>Quelle est la capitale de Maroc ?<br>➡ <u style='color:green'>Rabat</u></li>";
+            contenu += "<li>Quelle est la capitale du Maroc ?<br>➡ <u style='color:green'>Rabat</u></li>";
             contenu += "</ol>";
 
             const fenetre = window.open("", "Correction", "width=600,height=400,scrollbars=yes");
             fenetre.document.write(contenu);
         }
 
-        
         function afficherResultat() {
             const userReponses = getReponsesUtilisateur();
             let score = 0;
